@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Florecer Wellness</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="site-header">
+    <a href="#home" class="logo">
+      <img src="images/logo.png" alt="Florecer Wellness Logo">
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+
+    <nav class="nav" id="nav">
+      <a href="#mission">Mission</a>
+      <a href="#offerings">Offerings</a>
+      <a href="#about">About</a>
+      <a href="#booking">Schedule</a>
+      <a href="#contact">Contact</a>
+      <a href="#booking" class="nav-btn">Book Now</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <p class="eyebrow">Pilates • Movement • Community</p>
+      <h1>Florecer Wellness</h1>
+      <p class="hero-text">A welcoming movement space rooted in culture, connection, and care.</p>
+
+      <div class="hero-buttons">
+        <a href="#booking" class="btn primary">Book a Class</a>
+        <a href="#offerings" class="btn secondary">Explore Offerings</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section mission" id="mission">
+    <div class="section-grid">
+      <div class="image-card">
+        <img src="images/mission.jpg" alt="Florecer Wellness community">
+      </div>
+
+      <div class="section-copy">
+        <p class="eyebrow">Our Mission</p>
+        <h2>Movement that feels welcoming, accessible, and rooted in community.</h2>
+        <p>
+          At Florecer Wellness, we believe movement should help people feel stronger,
+          more confident, and more connected to themselves. Through Pilates, we create
+          supportive spaces where people of all backgrounds, experience levels, and
+          identities can move, grow, and feel seen.
+        </p>
+        <p>
+          Inspired by the meaning of florecer — “to bloom” — our goal is to help every
+          person walk through the door feeling valued, supported, and encouraged to show
+          up exactly as they are.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section offerings" id="offerings">
+    <div class="section-heading">
+      <p class="eyebrow">What We Offer</p>
+      <h2>Choose the experience that fits your journey.</h2>
+    </div>
+
+    <div class="cards">
+      <a href="#group-inquiry" class="offer-card">
+        <img src="images/group-classes.jpg" alt="Group Pilates class">
+        <div>
+          <h3>Group Classes</h3>
+          <p>Beginner-friendly Pilates classes designed to build strength, confidence, and body awareness.</p>
+          <span>Inquire Now →</span>
+        </div>
+      </a>
+
+      <a href="#private-inquiry" class="offer-card">
+        <img src="images/private-sessions.jpg" alt="Private Pilates session">
+        <div>
+          <h3>Private Sessions</h3>
+          <p>Personalized one-on-one or small group sessions tailored to your needs, goals, and comfort level.</p>
+          <span>Request Session →</span>
+        </div>
+      </a>
+
+      <a href="#event-inquiry" class="offer-card">
+        <img src="images/wellness-events.jpg" alt="Wellness event mats">
+        <div>
+          <h3>Wellness Events</h3>
+          <p>Movement experiences for local businesses, community groups, celebrations, and gatherings.</p>
+          <span>Plan Event →</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section class="calendar-section" id="booking">
+    <div class="section-heading">
+      <p class="eyebrow">Class Schedule</p>
+      <h2>Upcoming classes & events.</h2>
+      <p class="section-subtext">Choose a date to view available classes, private sessions, or events.</p>
+    </div>
+
+    <div class="calendar-layout">
+      <div class="calendar-card">
+        <div class="calendar-header">
+          <button id="prevMonth" type="button">‹</button>
+          <h3 id="monthYear"></h3>
+          <button id="nextMonth" type="button">›</button>
+        </div>
+
+        <div class="calendar-days">
+          <span>Sun</span>
+          <span>Mon</span>
+          <span>Tue</span>
+          <span>Wed</span>
+          <span>Thu</span>
+          <span>Fri</span>
+          <span>Sat</span>
+        </div>
+
+        <div class="calendar-grid" id="calendarGrid"></div>
+      </div>
+
+      <div class="event-list-card">
+        <h3>Selected Date</h3>
+        <p id="selectedDateText">Choose a date to view available classes.</p>
+        <div id="eventList"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="quote-banner">
+    <p>Todos son bienvenidos.</p>
+    <h2>Everyone is welcome here.</h2>
+  </section>
+
+  <section class="section about" id="about">
+    <div class="section-grid reverse">
+      <div class="section-copy">
+        <p class="eyebrow">About the Founder</p>
+        <h2>Creating space for people to bloom through movement.</h2>
+        <p>
+          Florecer Wellness was created to make Pilates feel more inclusive, warm,
+          and approachable. Every class is centered on mindful movement, community,
+          and helping people feel more at home in their bodies.
+        </p>
+        <p>
+          Whether you are new to Pilates or continuing your movement journey, you are
+          welcome here.
+        </p>
+      </div>
+
+      <div class="image-card founder-card">
+        <img src="images/founder.jpg" alt="Founder of Florecer Wellness">
+      </div>
+    </div>
+  </section>
+
+  <section class="inquiry-section">
+    <div class="section-heading">
+      <p class="eyebrow">Inquiries</p>
+      <h2>Tell us what you’re looking for.</h2>
+      <p class="section-subtext">Use the form that best fits your needs and we’ll follow up with you.</p>
+    </div>
+
+    <div class="inquiry-grid">
+      <form id="group-inquiry" class="inquiry-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <h3>Group Class Inquiry</h3>
+        <input type="hidden" name="Inquiry Type" value="Group Class">
+        <input name="Name" type="text" placeholder="Your name" required>
+        <input name="Email" type="email" placeholder="Email address" required>
+        <input name="Phone" type="tel" placeholder="Phone number">
+        <textarea name="Message" placeholder="What class are you interested in?" required></textarea>
+        <button type="submit">Send Group Inquiry</button>
+      </form>
+
+      <form id="private-inquiry" class="inquiry-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <h3>Private Session Inquiry</h3>
+        <input type="hidden" name="Inquiry Type" value="Private Session">
+        <input name="Name" type="text" placeholder="Your name" required>
+        <input name="Email" type="email" placeholder="Email address" required>
+        <input name="Phone" type="tel" placeholder="Phone number">
+        <textarea name="Message" placeholder="Tell us your goals or preferred times." required></textarea>
+        <button type="submit">Request Private Session</button>
+      </form>
+
+      <form id="event-inquiry" class="inquiry-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <h3>Wellness Event Inquiry</h3>
+        <input type="hidden" name="Inquiry Type" value="Wellness Event">
+        <input name="Name" type="text" placeholder="Your name" required>
+        <input name="Email" type="email" placeholder="Email address" required>
+        <input name="Phone" type="tel" placeholder="Phone number">
+        <textarea name="Message" placeholder="Tell us about your event, group size, and preferred date." required></textarea>
+        <button type="submit">Plan an Event</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="section contact" id="contact">
+    <div class="contact-card">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2>Let’s connect.</h2>
+        <p>Have a question about classes, private sessions, or wellness events? Reach out below.</p>
+      </div>
+
+      <div class="contact-info">
+        <a href="mailto:hello@florecerwellness.co">hello@florecerwellness.co</a>
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+        <p>Community-based Pilates & Wellness</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <img src="images/logo.png" alt="Florecer Wellness Logo">
+    <p>Florecer Wellness © 2026</p>
+    <p>Movement. Community. Cultura.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
